@@ -1,0 +1,69 @@
+name: Bug report
+description: Tell us about a problem with KiraLume.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping us improve KiraLume. Please remove any private information from screenshots and snippets.
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      options:
+        - KiraLume Dawn
+        - KiraLume Daylight
+        - KiraLume Midnight
+        - Multiple themes
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: vscode-version
+    attributes:
+      label: VS Code version
+      description: Find this under Help → About (or Code → About Visual Studio Code on macOS).
+      placeholder: e.g. 1.96.0
+    validations:
+      required: true
+  - type: input
+    id: extension-version
+    attributes:
+      label: KiraLume version
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and language
+      description: Include the OS and, for syntax issues, the file language and relevant language extension.
+      placeholder: e.g. Windows 11, TypeScript
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Select a theme
+        2. Open a file or view
+        3. See the issue
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Screenshots and extra context
+      description: Add screenshots, a small code sample, or relevant theme customisations if they help.

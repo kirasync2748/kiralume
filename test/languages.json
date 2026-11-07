@@ -1,0 +1,15 @@
+{
+  "javascript": "export const greet = (name = 'KiraLume') => `Hello ${name}`;\nconsole.log(greet());",
+  "typescript": "interface Theme { name: string; }\nconst theme: Theme = { name: 'KiraLume' };",
+  "python": "from dataclasses import dataclass\n@dataclass\nclass Theme:\n    name: str = 'KiraLume'\nprint(Theme().name)",
+  "java": "class Theme { public static void main(String[] args) { System.out.println(\"KiraLume\"); } }",
+  "c": "#include <stdio.h>\nint main(void) { printf(\"KiraLume\\n\"); return 0; }",
+  "cpp": "#include <string>\nstruct Theme { std::string name = \"KiraLume\"; };",
+  "csharp": "using System;\nrecord Theme(string Name);\nConsole.WriteLine(new Theme(\"KiraLume\"));",
+  "html": "<!doctype html>\n<main class=\"theme\"><h1>KiraLume</h1></main>",
+  "css": ":root { --accent: #aabaff; }\n.theme:hover { color: var(--accent); padding: 1rem; }",
+  "json": "{\"name\": \"KiraLume\", \"themes\": 9, \"enabled\": true}",
+  "markdown": "# KiraLume\n\n**Three themes** with `readable code`.\n\n- Midnight\n- Dawn\n",
+  "shellscript": "#!/bin/sh\nname='KiraLume'\nprintf '%s\\n' \"$name\"",
+  "plaintext": "KiraLume stays readable even without a language grammar."
+}

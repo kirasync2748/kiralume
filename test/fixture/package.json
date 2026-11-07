@@ -1,0 +1,8 @@
+{
+  "name": "kiralume-test-host",
+  "version": "1.0.0",
+  "publisher": "kiralume-tests",
+  "engines": {
+    "vscode": "^1.96.0"
+  }
+}

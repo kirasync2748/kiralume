@@ -1,0 +1,74 @@
+{
+  "name": "kiralume",
+  "displayName": "KiraLume",
+  "description": "Dawn, Daylight and Midnight: three complete colour palettes for your VS Code workspace.",
+  "version": "1.0.0",
+  "publisher": "kirasync2748",
+  "engines": {
+    "vscode": "^1.96.0",
+    "node": ">=26 <27"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "dawn",
+    "daylight",
+    "midnight"
+  ],
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#101323",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirasync2748/KiraLume.git"
+  },
+  "homepage": "https://github.com/kirasync2748/KiraLume#readme",
+  "bugs": {
+    "url": "https://github.com/kirasync2748/KiraLume/issues"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "KiraLume Midnight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/midnight-color-theme.json"
+      },
+      {
+        "label": "KiraLume Dawn",
+        "uiTheme": "vs",
+        "path": "./themes/dawn-color-theme.json"
+      },
+      {
+        "label": "KiraLume Daylight",
+        "uiTheme": "vs",
+        "path": "./themes/daylight-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "check:generated": "node scripts/generate.mjs --check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test test/*.test.mjs",
+    "test:integration": "node test/run-vscode.mjs",
+    "package": "node -e \"require('node:fs').mkdirSync('dist', { recursive: true })\" && vsce package --no-dependencies --out dist/KiraLume.vsix"
+  },
+  "devDependencies": {
+    "@vscode/test-electron": "3.1.0",
+    "@vscode/vsce": "4.1.0",
+    "prettier": "3.9.10"
+  },
+  "overrides": {
+    "@vscode/vsce": {
+      "minimatch": "11.0.1"
+    }
+  }
+}

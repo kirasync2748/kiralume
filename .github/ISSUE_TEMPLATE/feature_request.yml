@@ -1,0 +1,26 @@
+name: Feature request
+description: Share an idea for improving KiraLume.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Cheers for sharing your idea! Tell us what would make your VS Code workspace better.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to improve?
+      description: Describe the need or problem behind your idea.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Your idea
+      description: Explain the change you would like to see and which theme or area it affects.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Examples or extra context
+      description: Add screenshots, alternatives you considered, or other details that help explain the idea.
