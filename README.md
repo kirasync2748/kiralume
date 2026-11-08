@@ -1,4 +1,21 @@
+<div align="center">
+
+<img src="assets/icon.png" alt="KiraLume icon" width="110">
+
 # KiraLume
+
+**Three colour themes for your VS Code workspace.**
+
+Pick your light, set your mood, and make it yours.
+
+[![CI](https://github.com/kirasync2748/KiraLume/actions/workflows/ci.yml/badge.svg)](https://github.com/kirasync2748/KiraLume/actions/workflows/ci.yml)
+[![Extension Release](https://github.com/kirasync2748/KiraLume/actions/workflows/release.yml/badge.svg)](https://github.com/kirasync2748/KiraLume/actions/workflows/release.yml)
+[![Marketplace Version](https://vsmarketplacebadges.dev/version-short/kirasync2748.kiralume.svg)](https://marketplace.visualstudio.com/items?itemName=kirasync2748.kiralume)
+[![Marketplace Downloads](https://vsmarketplacebadges.dev/downloads-short/kirasync2748.kiralume.svg)](https://marketplace.visualstudio.com/items?itemName=kirasync2748.kiralume)
+
+</div>
+
+---
 
 Three colour themes for your VS Code workspace. Pick your light, set your mood, and make it yours.
 
